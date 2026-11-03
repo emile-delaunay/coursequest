@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>CourseQuest</title>
+  <meta name="description" content="Révisions gamifiées des cours du S3 : leçons courtes, XP, séries et cœurs.">
+  <meta name="theme-color" content="#7b5cff">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;800;900&display=swap">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="topbar" id="topbar">
+    <a class="brand" href="#/" aria-label="Accueil CourseQuest">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3l11 6v14l-11 6-11-6V9z" fill="currentColor"/><path d="M11 16l3.5 3.5L21 13" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span>CourseQuest</span>
+    </a>
+    <div class="stats" aria-label="Tes statistiques">
+      <button type="button" class="stat streak" id="statStreak" title="Série de jours"><span class="ico">🔥</span><b id="streakVal">0</b></button>
+      <button type="button" class="stat xp" id="statXp" title="XP total"><span class="ico">⚡</span><b id="xpVal">0</b></button>
+      <button type="button" class="stat hearts" id="statHearts" title="Cœurs"><span class="ico">❤️</span><b id="heartsVal">5</b></button>
+    </div>
+  </header>
+
+  <main id="app" class="app" aria-live="polite"></main>
+
+  <div class="toast" id="toast" role="status" hidden></div>
+  <canvas id="confetti" aria-hidden="true"></canvas>
+
+  <noscript><p style="padding:24px">CourseQuest a besoin de JavaScript.</p></noscript>
+  <script src="assets/app.js" defer></script>
+</body>
+</html>
