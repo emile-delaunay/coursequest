@@ -22,7 +22,7 @@
     xp: 0, goal: 30, daily: { date: today(), xp: 0 },
     streak: { count: 0, last: null, best: 0 },
     hearts: MAX_HEARTS, heartsAt: Date.now(),
-    sound: true, badges: [], courses: {}, perfects: 0, lessonsDone: 0,
+    sound: true, badges: [], courses: {}, perfects: 0, lessonsDone: 0, lastCourse: null,
   });
 
   let S = load();
@@ -111,7 +111,7 @@
     if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
     const c = $("#confetti"), ctx = c.getContext("2d");
     c.width = innerWidth; c.height = innerHeight;
-    const colors = ["#7b5cff", "#ffbf1f", "#22b573", "#ff5c8a", "#1aa3ff"];
+    const colors = ["#3f7a4c", "#d9a441", "#5b9e45", "#b8623f", "#e8dcc2"];
     const ps = Array.from({ length: 140 }, () => ({ x: Math.random() * c.width, y: -20 - Math.random() * c.height * 0.4, vx: (Math.random() - 0.5) * 4, vy: 2 + Math.random() * 4, r: 4 + Math.random() * 5, a: Math.random() * 6, col: colors[(Math.random() * colors.length) | 0] }));
     const t0 = performance.now();
     (function frame(t) {
@@ -158,6 +158,33 @@
     toast(S.hearts >= MAX_HEARTS ? "Tes cœurs sont au maximum." : `Prochain cœur dans ${fmtTime(nextHeartIn())}. Une révision redonne aussi un cœur.`);
   };
 
+  // ---------------------------------------------------------------- menu
+  async function menuCourseId() {
+    if (S.lastCourse) return S.lastCourse;
+    const live = (await getIndex()).courses.find((c) => c.status === "live");
+    return live && live.id;
+  }
+  function renderMenu(parts) {
+    const inSession = ["l", "t", "p"].includes(parts[0]);
+    document.body.classList.toggle("in-session", inSession);
+    const active = { c: "learn", profile: "profile", aide: "help" }[parts[0]] || (parts.length ? "" : "home");
+    document.querySelectorAll("#menu [data-nav]").forEach((a) => {
+      if (a.dataset.nav === active) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current");
+    });
+  }
+  $('#menu [data-nav="learn"]').onclick = async (e) => {
+    e.preventDefault();
+    const id = await menuCourseId();
+    if (id) location.hash = `#/c/${id}`;
+  };
+  $('#menu [data-nav="practice"]').onclick = async (e) => {
+    e.preventDefault();
+    const id = await menuCourseId();
+    if (!id) return;
+    if (!Object.keys(courseState(id).lessons).length) return toast("Termine une première leçon pour débloquer la révision.");
+    location.hash = `#/p/${id}`;
+  };
+
   // ---------------------------------------------------------------- router
   window.addEventListener("hashchange", route);
   async function route() {
@@ -165,12 +192,14 @@
     renderStats();
     window.scrollTo(0, 0);
     const parts = location.hash.replace(/^#\/?/, "").split("/").filter(Boolean);
+    renderMenu(parts);
     try {
       if (parts[0] === "c" && parts[1]) return await viewCourse(parts[1]);
       if (parts[0] === "l" && parts[2]) return await startSession({ mode: "lesson", courseId: parts[1], lessonId: parts[2] });
       if (parts[0] === "t" && parts[2]) return await startSession({ mode: "checkpoint", courseId: parts[1], unitId: parts[2] });
       if (parts[0] === "p" && parts[1]) return await startSession({ mode: "practice", courseId: parts[1] });
       if (parts[0] === "profile") return viewProfile();
+      if (parts[0] === "aide") return viewHelp();
       return await viewHome();
     } catch (err) {
       console.error(err);
@@ -214,6 +243,7 @@
   async function viewCourse(id) {
     const course = await getCourse(id);
     const cs = courseState(id);
+    if (S.lastCourse !== id) { S.lastCourse = id; save(); }
     const all = flatLessons(course);
     const unlocked = (i) => i === 0 || !!cs.lessons[all[i - 1].lesson.id];
     const currentIdx = all.findIndex((x, i) => unlocked(i) && !cs.lessons[x.lesson.id]);
@@ -261,7 +291,7 @@
     const course = await getCourse(opts.courseId);
     const cs = courseState(opts.courseId);
     regenHearts();
-    let items = [], title = "", color = "#7b5cff";
+    let items = [], title = "", color = "#3f7a4c";
     if (opts.mode === "lesson") {
       const all = flatLessons(course);
       const i = all.findIndex((x) => x.lesson.id === opts.lessonId);
@@ -492,7 +522,7 @@
       <div class="result-stats">
         <div class="rs" style="--c:var(--gold)"><small>XP gagnés</small><b>+${L.xp}</b></div>
         <div class="rs" style="--c:var(--good)"><small>Précision</small><b>${Math.round(acc * 100)}%</b></div>
-        <div class="rs" style="--c:#1aa3ff"><small>Temps</small><b>${fmtTime(secs * 1000)}</b></div>
+        <div class="rs" style="--c:#2f7a6a"><small>Temps</small><b>${fmtTime(secs * 1000)}</b></div>
       </div>
       <p class="muted">🔥 Série : ${liveStreak()} jour${liveStreak() > 1 ? "s" : ""} · Objectif du jour : ${Math.min(S.daily.xp, S.goal)}/${S.goal} XP${L.maxCombo >= 3 ? ` · Meilleur combo : ${L.maxCombo}` : ""}</p>
       ${review}
@@ -552,6 +582,24 @@
       if (!resetArmed) { resetArmed = true; $("#reset").textContent = "Clique encore pour tout effacer"; setTimeout(() => { resetArmed = false; const r = $("#reset"); if (r) r.textContent = "Réinitialiser ma progression"; }, 3500); return; }
       resetArmed = false; S = fresh(); save(); renderStats(); toast("Progression réinitialisée."); viewProfile();
     };
+  }
+
+  // ---------------------------------------------------------------- help
+  function viewHelp() {
+    const rules = [
+      ["🗺️", "Le parcours", "Les leçons se débloquent dans l'ordre. Chaque unité se termine par un test de " + CHECKPOINT_SIZE + " questions, validé à " + Math.round(CHECKPOINT_PASS * 100) + " %."],
+      ["⚡", "Les XP", `${XP_FIRST_TRY} XP par bonne réponse du premier coup, ${XP_RETRY} XP au 2e essai, +${XP_PERFECT_BONUS} pour une leçon sans faute, +${XP_CHECKPOINT_PASS} pour un test réussi.`],
+      ["❤️", "Les cœurs", `${MAX_HEARTS} au maximum. Une erreur en leçon coûte un cœur. Tu en regagnes un toutes les 30 min, ou après une révision.`],
+      ["🔁", "La révision", "Rejoue les questions ratées, sans perdre de cœur. Une réponse fausse en leçon est reposée à la fin."],
+      ["🔥", "La série", "Gagne des XP chaque jour pour faire grandir ta série. Règle ton objectif quotidien dans le profil."],
+      ["⭐", "Les étoiles", "3 étoiles à partir de 95 % de bonnes réponses, 2 étoiles à partir de 75 %."],
+    ];
+    app.innerHTML = `<section class="profile">
+      <div><h1>Comment ça marche</h1><p class="muted" style="margin:6px 0 0">Des leçons de 3 minutes pour réviser tes cours du semestre.</p></div>
+      <div class="help-list">${rules.map(([e, t, d]) => `<div class="help-item"><span class="e">${e}</span><div><h3>${t}</h3><p>${esc(d)}</p></div></div>`).join("")}</div>
+      <div><h2 style="font-size:20px;margin-bottom:10px">Raccourcis clavier</h2>
+        <p class="muted" style="margin:0">Touches 1 à 4 pour choisir une réponse, Entrée pour vérifier puis continuer.</p></div>
+      <p class="muted" style="font-size:13px">Ta progression est enregistrée dans ce navigateur uniquement : aucun compte, aucun serveur.</p></section>`;
   }
 
   // ---------------------------------------------------------------- boot

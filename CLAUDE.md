@@ -45,10 +45,10 @@ Ce dossier contient la version complète et testée de tous les fichiers. C'est 
 SPA statique en JavaScript vanilla : aucune dépendance, aucun build. On la lance en local avec `python3 -m http.server 8000`.
 
 ```
-index.html             coquille : barre du haut (série 🔥, XP ⚡, cœurs ❤️), <main id="app">, toast, canvas confettis
+index.html             coquille : barre du haut (série 🔥, XP ⚡, cœurs ❤️), menu (#menu), <main id="app">, toast, canvas confettis
 assets/style.css       tokens CSS sur :root + mode sombre, boutons « chunky », parcours en zigzag, UI des leçons
 assets/app.js          tout le JS (IIFE, ~36 Ko) : état, routeur, vues, moteur d'exercices, badges, sons, confettis
-assets/icon.svg        favicon (hexagone violet)
+assets/icon.svg        favicon (hexagone vert)
 data/courses.json      catalogue des cours du semestre (status "live" ou "soon")
 data/trademark-law.json  8 unités, 16 leçons, 107 exercices
 ```
@@ -61,6 +61,11 @@ data/trademark-law.json  8 unités, 16 leçons, 107 exercices
 - `#/t/:courseId/:unitId` checkpoint d'unité
 - `#/p/:courseId` entraînement sur les erreurs
 - `#/profile` profil
+- `#/aide` aide (règles du jeu)
+
+**Menu** : barre d'onglets en bas sur mobile, barre latérale à partir de 900 px ; masqué pendant une session (`body.in-session`). « Apprendre » et « Réviser » visent le dernier cours ouvert (`S.lastCourse`), sinon le premier cours `live`.
+
+**Palette** : beige (fond) et vert forêt (`--primary`), terracotta pour les erreurs, ocre pour l'or. Les couleurs des unités (`data/*.json`) et des cours (`courses.json`) restent dans ces tons.
 
 **État** : `localStorage`, clé `coursequest-v1`. La progression est propre à chaque navigateur ; il n'y a pas de backend.
 

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>CourseQuest</title>
   <meta name="description" content="Révisions gamifiées des cours du S3 : leçons courtes, XP, séries et cœurs.">
-  <meta name="theme-color" content="#7b5cff">
+  <meta name="theme-color" content="#3f7a4c">
   <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,6 +24,18 @@
       <button type="button" class="stat hearts" id="statHearts" title="Cœurs"><span class="ico">❤️</span><b id="heartsVal">5</b></button>
     </div>
   </header>
+
+  <nav class="menu" id="menu" aria-label="Menu principal">
+    <a class="menu-brand" href="#/" aria-label="Accueil CourseQuest">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3l11 6v14l-11 6-11-6V9z" fill="currentColor"/><path d="M11 16l3.5 3.5L21 13" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span>CourseQuest</span>
+    </a>
+    <a href="#/" data-nav="home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg><span>Accueil</span></a>
+    <a href="#/" data-nav="learn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 21V5M8 7h7"/></svg><span>Apprendre</span></a>
+    <a href="#/" data-nav="practice"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.3-5.7M20 4v5h-5"/></svg><span>Réviser</span></a>
+    <a href="#/profile" data-nav="profile"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg><span>Profil</span></a>
+    <a href="#/aide" data-nav="help"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .9-1 1.6V14M12 17.5v.01"/></svg><span>Aide</span></a>
+  </nav>
 
   <main id="app" class="app" aria-live="polite"></main>
 
