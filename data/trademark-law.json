@@ -1,0 +1,275 @@
+{
+  "id": "trademark-law",
+  "title": "Trademark Law",
+  "code": "2311",
+  "source": "Built from the Trademark Law 2311 slides (Elsa Mimoun, course coordinator), Translated Glossary and Case law list on MyCourses.",
+  "units": [
+    {
+      "id": "u1",
+      "title": "IP rights & other distinctive signs",
+      "session": "Session 1",
+      "color": "#7b5cff",
+      "lessons": [
+        {
+          "id": "u1l1",
+          "title": "The IP family",
+          "exercises": [
+            { "id": "u1l1e1", "type": "mcq", "prompt": "Which IP right protects an original literary, dramatic, musical or artistic work, without any registration?", "choices": ["Copyright", "Patent", "Design", "Trademark"], "answer": 0, "explain": "Copyright arises without registration and lasts 70 years after the death of the author (natural person) or after divulgation by a legal person." },
+            { "id": "u1l1e2", "type": "match", "prompt": "Match each IP right with its length of protection.", "pairs": [["Copyright", "70 years after the author's death"], ["Design", "5 years, renewable up to 25"], ["Patent", "20 years after registration"], ["Trademark", "10 years, renewable indefinitely"]] },
+            { "id": "u1l1e3", "type": "mcq", "prompt": "An invention can be patented if it…", "choices": ["is new, involves an inventive step and has an industrial application", "is original and fixed in a tangible form", "is distinctive and capable of being represented", "has an individual character and a new appearance"], "answer": 0, "explain": "Patent: new (not part of the prior art), inventive step (not obvious to a skilled person) and industrial application." },
+            { "id": "u1l1e4", "type": "tf", "prompt": "Copyright protection only starts once the work has been registered.", "answer": false, "explain": "Copyright is acquired without registration. Designs, patents and trademarks require registration." },
+            { "id": "u1l1e5", "type": "mcq", "prompt": "\"Champagne\" is protected as…", "choices": ["a Protected Designation of Origin (PDO)", "a Protected Geographical Indication (PGI)", "a collective trademark", "a design"], "answer": 0, "explain": "A PDO covers a product whose main production steps follow an established technique in one geographical area. Bayonne ham is an example of a PGI." },
+            { "id": "u1l1e6", "type": "mcq", "prompt": "Since 2014 in France, \"Limoges porcelain\" can be protected as…", "choices": ["a geographical indication for industrial and handcrafted products", "a PDO", "a well-known trademark", "a patent"], "answer": 0, "explain": "Geographical indications for industrial and hand-crafted products (GIPICP) protect non-agricultural products whose quality or reputation comes from their origin." },
+            { "id": "u1l1e7", "type": "fill", "prompt": "The infringement of an IP right is both a ___ and a ___ offense.", "bank": ["civil", "criminal", "fiscal", "administrative"], "answer": ["civil", "criminal"], "explain": "IP infringement is both a civil and a criminal offense, and the procedure is similar for all IP rights." }
+          ]
+        },
+        {
+          "id": "u1l2",
+          "title": "Other distinctive signs",
+          "exercises": [
+            { "id": "u1l2e1", "type": "mcq", "prompt": "What does the principle of specialty mean?", "choices": ["A distinctive sign is only protected for the goods and services for which it is used or registered", "A trademark is protected in every country", "Only specialists can register a trademark", "A sign is protected for all products of the company"], "answer": 0, "explain": "Example from the course: the sign \"Sandro\" is only protected for fashion items." },
+            { "id": "u1l2e2", "type": "match", "prompt": "Match each sign with its definition.", "pairs": [["Registered company name", "Name of the legal person"], ["Commercial name", "Name under which a merchant runs his activity"], ["Domain name", "Identifies the address of a website"], ["Trademark", "Distinguishes the goods or services of one undertaking"]] },
+            { "id": "u1l2e3", "type": "tf", "prompt": "A domain name is protected through a trademark infringement action (contrefaçon).", "answer": false, "explain": "Company names, commercial names and domain names have no common legislation: they are protected by an action in tort, mostly unfair competition." },
+            { "id": "u1l2e4", "type": "mcq", "prompt": "A commercial name is protected against a confusing sign used for a similar activity…", "choices": ["in the same geographical area where the merchant operates", "everywhere in the EU", "only if it is also a registered trademark", "worldwide"], "answer": 0, "explain": "The protection of a commercial name is local: it is limited to the area where the merchant has his activity." },
+            { "id": "u1l2e5", "type": "mcq", "prompt": "Which is NOT a purpose of IP rights listed in the course?", "choices": ["Granting a permanent monopoly to the first creator", "Promoting technological innovation", "Promoting art and culture", "Fair competition giving consumers better services at a lower price"], "answer": 0, "explain": "IP rights aim at innovation, art and culture, and fair competition. Most of them are limited in time." },
+            { "id": "u1l2e6", "type": "mcq", "scenario": "A competitor registers the company name \"Biodermia SAS\" and sells similar creams in France, creating confusion with your company \"Biodermya\".", "prompt": "Which action fits a company name?", "choices": ["An action in tort for unfair competition", "A trademark infringement action", "A criminal action for counterfeiting only", "No action is possible"], "answer": 0, "explain": "A company name is protected in France against a confusing sign for a similar activity, through tortious liability (unfair competition)." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u2",
+      "title": "Categories & functions of trademarks",
+      "session": "Session 2",
+      "color": "#ff5c8a",
+      "lessons": [
+        {
+          "id": "u2l1",
+          "title": "Collective & guarantee marks",
+          "exercises": [
+            { "id": "u2l1e1", "type": "mcq", "prompt": "A collective mark distinguishes…", "choices": ["the goods and services of members of an association from those of non-members", "goods certified by an independent body", "one company's goods from its competitors'", "products from a protected geographical area"], "answer": 0, "explain": "Collective marks are used by associations to identify products from several producers sharing a characteristic." },
+            { "id": "u2l1e2", "type": "tf", "prompt": "The owner of a guarantee (certification) mark may itself supply the kind of goods it certifies.", "answer": false, "explain": "Anyone can apply for a certification mark, provided they do not run a business supplying the goods or services certified." },
+            { "id": "u2l1e3", "type": "mcq", "prompt": "Who can apply for an EU collective mark?", "choices": ["Associations of manufacturers, producers, traders or service suppliers, and legal persons governed by public law", "Any natural person", "Only the EUIPO", "Only certification bodies"], "answer": 0, "explain": "Only associations and legal persons governed by public law can apply for a collective mark." },
+            { "id": "u2l1e4", "type": "mcq", "prompt": "What is the application fee for an EU collective or guarantee mark?", "choices": ["€1,500", "€850", "€190", "€3,000"], "answer": 0, "explain": "Both the EU collective mark and the EU guarantee mark cost €1,500 to apply for." },
+            { "id": "u2l1e5", "type": "match", "prompt": "Match each mark with what it signals.", "pairs": [["Individual mark", "Origin from one undertaking"], ["Collective mark", "Membership of an association"], ["Guarantee mark", "Compliance with standards set by the owner"]] },
+            { "id": "u2l1e6", "type": "mcq", "prompt": "How can a company use these marks in its CSR policy?", "choices": ["Use a guarantee mark certifying sustainability standards it really meets", "Register \"eco\" as an individual mark for all its products", "Avoid any label to stay neutral", "Use a collective mark without being a member"], "answer": 0, "explain": "Guarantee and collective marks signal commitment to sustainability, while trademark law prevents misleading claims." }
+          ]
+        },
+        {
+          "id": "u2l2",
+          "title": "Definition, sources & functions",
+          "exercises": [
+            { "id": "u2l2e1", "type": "fill", "prompt": "Art. 3 TM Directive: signs capable of distinguishing the goods or services of one ___ from those of others, and of being ___ on the register.", "bank": ["undertaking", "represented", "consumer", "drawn", "country"], "answer": ["undertaking", "represented"], "explain": "Article 3 of Directive 2015/2436 defines the trademark: any sign capable of distinguishing and of being represented on the register." },
+            { "id": "u2l2e2", "type": "mcq", "prompt": "According to Hoffmann-La Roche (CJEU, 1978), the essential function of a trademark is to…", "choices": ["guarantee the identity of origin of the product to the consumer", "guarantee the lowest price", "advertise the product", "protect the shape of the product"], "answer": 0, "explain": "It lets consumers distinguish, without confusion, products of one origin from products of another origin." },
+            { "id": "u2l2e3", "type": "match", "prompt": "Match each CJEU case with its teaching.", "pairs": [["Hoffmann-La Roche (1978)", "Essential function: guarantee of origin"], ["Arsenal (2002)", "Use must affect the TM's functions"], ["Bellure (2009)", "Quality, communication, investment, advertising"], ["Google (2010)", "TM as a tool of sales promotion"]] },
+            { "id": "u2l2e4", "type": "mcq", "prompt": "Which EU text is directly applicable to the EU trademark?", "choices": ["Regulation (EU) 2017/1001", "Directive (EU) 2015/2436", "Directive 2004/48", "The Paris Convention"], "answer": 0, "explain": "A regulation applies directly. Directive 2015/2436 approximates national trademark laws; Directive 2004/48 deals with enforcement." },
+            { "id": "u2l2e5", "type": "mcq", "prompt": "Which international text organises the international registration of marks?", "choices": ["The Madrid Protocol (1989)", "The Paris Convention (1883)", "Directive 2004/48", "The Berne Convention"], "answer": 0, "explain": "The Paris Convention (1883) protects industrial property; the Madrid Protocol (1989) concerns international registration. Both are administered by WIPO." },
+            { "id": "u2l2e6", "type": "tf", "prompt": "Directive 2004/48 deals with the enforcement of intellectual property rights.", "answer": true, "explain": "It harmonises measures such as evidence seizure, right of information and remedies." },
+            { "id": "u2l2e7", "type": "mcq", "prompt": "Which is NOT one of the trademark functions recognised in Bellure?", "choices": ["Guaranteeing the lowest market price", "Guaranteeing quality", "Communication", "Investment and advertising"], "answer": 0, "explain": "Bellure: besides origin, the functions include quality, communication, investment and advertising." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u3",
+      "title": "A sign capable of representation",
+      "session": "Session 3",
+      "color": "#1aa3ff",
+      "lessons": [
+        {
+          "id": "u3l1",
+          "title": "Any sign, clearly represented",
+          "exercises": [
+            { "id": "u3l1e1", "type": "mcq", "prompt": "The 3 conditions of the trademark definition are…", "choices": ["any sign, capable of being represented on the register, capable of distinguishing", "original, new, registered", "graphic, durable, famous", "useful, visible, registered"], "answer": 0, "explain": "These three conditions form the absolute grounds linked to the definition of a trademark." },
+            { "id": "u3l1e2", "type": "mcq", "scenario": "Dyson applied for \"a transparent bin or collection chamber forming part of the external surface of a vacuum cleaner\".", "prompt": "What did the CJEU decide (2007)?", "choices": ["It is not a sign: it is a mere concept", "It is a valid shape mark", "It is a valid colour mark", "It infringes a prior patent"], "answer": 0, "explain": "Dyson (C-321/03): a concept, covering every possible shape of a transparent bin, is not a sign." },
+            { "id": "u3l1e3", "type": "mcq", "prompt": "Which is NOT one of the Sieckmann criteria for the representation of a sign?", "choices": ["Original", "Clear and precise", "Self-contained and easily accessible", "Intelligible, durable and objective"], "answer": 0, "explain": "Sieckmann (C-273/00): clear, precise, self-contained, easily accessible, intelligible, durable and objective." },
+            { "id": "u3l1e4", "type": "tf", "prompt": "Under Directive 2015/2436, a sign no longer has to be represented graphically.", "answer": true, "explain": "The old 2008 Directive required a graphic representation. Now the sign must be represented on the register clearly and precisely, e.g. by an audio file." },
+            { "id": "u3l1e5", "type": "mcq", "prompt": "Libertel (2003): how can a colour per se be validly represented?", "choices": ["By designating it with an internationally recognised colour code", "By a paper sample of the colour only", "By describing it in words", "It can never be represented"], "answer": 0, "explain": "A paper sample is not durable; an internationally recognised code (e.g. Pantone) makes it clear and precise." },
+            { "id": "u3l1e6", "type": "mcq", "prompt": "A mark consisting of a combination of colours without contours requires…", "choices": ["a reproduction showing their systematic arrangement + a recognised colour code", "only a description", "a video file", "a sample of the product"], "answer": 0, "explain": "A description of the arrangement can be added but is optional." }
+          ]
+        },
+        {
+          "id": "u3l2",
+          "title": "Sounds, smells, shapes & motion",
+          "exercises": [
+            { "id": "u3l2e1", "type": "mcq", "scenario": "Shield Mark tried to register the first notes of \"Für Elise\" and a cockcrow in several forms.", "prompt": "Which representation of a sound mark was accepted?", "choices": ["A stave with clef, notes and rests", "The onomatopoeia \"Kukelekuuuuu\"", "\"The first nine notes of Für Elise\"", "The sequence of notes E, D#, E, D#, E, B, D, C, A"], "answer": 0, "explain": "Shield Mark (C-283/01): today a sound mark is an audio file or an accurate musical notation; onomatopoeia or bare notes are not enough." },
+            { "id": "u3l2e2", "type": "tf", "prompt": "A smell can be registered as an EU trademark if it is described by its chemical formula.", "answer": false, "explain": "Smell of ripe strawberries (T-305/04): smells cannot currently be represented with clarity and precision." },
+            { "id": "u3l2e3", "type": "match", "prompt": "Match each type of mark with its representation.", "pairs": [["Motion mark", "Video file or sequential still images"], ["Sound mark", "Audio file or musical notation"], ["Position mark", "Position + size, with dotted-line disclaimer"], ["Pattern mark", "Reproduction showing the repetition"]] },
+            { "id": "u3l2e4", "type": "mcq", "prompt": "A shape mark filed on paper (not electronically) may contain up to…", "choices": ["6 different views", "1 view", "3 views", "unlimited views"], "answer": 0, "explain": "Shape marks: graphic (incl. computer imaging) or photographic reproduction; up to six views on paper." },
+            { "id": "u3l2e5", "type": "mcq", "scenario": "Linda wants to register an orange strip covering the toe area of a sock.", "prompt": "Which type of mark is it?", "choices": ["A position mark", "A colour mark", "A pattern mark", "A shape mark"], "answer": 0, "explain": "A position mark shows where and in what proportion the sign is affixed, with a visual disclaimer for the rest of the product." },
+            { "id": "u3l2e6", "type": "mcq", "scenario": "Georges wants to register the mooing of a cow.", "prompt": "Can the sign be represented?", "choices": ["Yes, with an audio file of the sound", "Yes, with the word \"Moooo\"", "No, animal sounds are excluded", "Only if he also files a smell"], "answer": 0, "explain": "An onomatopoeia is not precise enough, but an audio file is a valid representation. Distinctiveness is then a separate question." },
+            { "id": "u3l2e7", "type": "mcq", "scenario": "Linda also wants to register the colour pink.", "prompt": "What must she file?", "choices": ["A reproduction of the colour and a recognised colour code", "Only the word \"pink\"", "A photo of a pink product", "Nothing: colours are free"], "answer": 0, "explain": "A single colour requires a reproduction and a generally recognised colour code (both mandatory)." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u4",
+      "title": "A distinctive sign",
+      "session": "Session 4",
+      "color": "#18b47b",
+      "lessons": [
+        {
+          "id": "u4l1",
+          "title": "Distinctiveness",
+          "exercises": [
+            { "id": "u4l1e1", "type": "mcq", "prompt": "Selling bags under the sign \"Bag\" is…", "choices": ["generic: not distinctive", "suggestive", "arbitrary", "fanciful"], "answer": 0, "explain": "A sign is not distinctive if it is the designation of the goods (generic), describes a characteristic (descriptive) or is commonly used for them." },
+            { "id": "u4l1e2", "type": "match", "prompt": "Place each sign on the distinctiveness scale (for bags).", "pairs": [["\"Bag\"", "Generic"], ["\"Leather\" (leather bags)", "Descriptive"], ["\"Travelmate\"", "Suggestive"], ["\"Banana\"", "Arbitrary"]] },
+            { "id": "u4l1e3", "type": "tf", "prompt": "A descriptive sign can still be registered if it has acquired distinctiveness through use.", "answer": true, "explain": "Acquired distinctiveness is assessed for the average consumer: surveys, market share, advertising, turnover." },
+            { "id": "u4l1e4", "type": "mcq", "prompt": "Which type of sign makes the strongest trademark?", "choices": ["Fanciful (invented word)", "Descriptive", "Suggestive", "Generic"], "answer": 0, "explain": "The further the sign is from the goods, the more distinctive it is." },
+            { "id": "u4l1e5", "type": "mcq", "scenario": "Audi applied for the slogan \"Vorsprung durch Technik\" (advantage through technology).", "prompt": "Can a slogan be a valid trademark? (CJEU, 2010)", "choices": ["Yes, if it has some originality or resonance requiring interpretation", "No, slogans are always advertising", "Only if it is in English", "Only for cars"], "answer": 0, "explain": "Vorsprung durch Technik (C-398/08): a slogan is not excluded just because it conveys an objective message." },
+            { "id": "u4l1e6", "type": "mcq", "scenario": "Lindt applied for the shape of its gold-wrapped chocolate bunny.", "prompt": "Which rule did the CJEU apply (2012)?", "choices": ["Only a shape departing significantly from the norms of the sector is distinctive", "Any 3D shape is distinctive", "Shapes are always excluded", "Gold colour makes it valid"], "answer": 0, "explain": "Lindt (C-98/11 P): the bunny shape did not depart enough from the customs of the sector." },
+            { "id": "u4l1e7", "type": "mcq", "scenario": "Ardagh tried to register the sound of a drinks can opening.", "prompt": "Why was it refused (General Court, 2021)?", "choices": ["The sound is inherent in using the goods: perceived as functional, not as an origin", "Sounds cannot be registered", "It was not filed as an audio file", "Another company owned it"], "answer": 0, "explain": "Ardagh (T-668/19): the mark was devoid of distinctive character." },
+            { "id": "u4l1e8", "type": "tf", "prompt": "In Apple (CJEU, 2014), the layout of a retail store could be registered as a trademark.", "answer": true, "explain": "Apple (C-421/13): a store layout can be a trademark, provided it is distinctive (compare with the French Sephora case, 2000)." }
+          ]
+        },
+        {
+          "id": "u4l2",
+          "title": "Shapes, deceptive & unlawful signs",
+          "exercises": [
+            { "id": "u4l2e1", "type": "mcq", "prompt": "Which shape is NOT excluded by Art. 4(1)(e) TMD?", "choices": ["A shape chosen for its originality, with no technical role", "A shape resulting from the nature of the goods", "A shape necessary to obtain a technical result", "A shape giving substantial value to the goods"], "answer": 0, "explain": "The exclusions cover shapes resulting from the nature of goods, necessary for a technical result, or giving substantial value." },
+            { "id": "u4l2e2", "type": "fill", "prompt": "Art. 4(1)(e) prevents a ___ on technical solutions, which belong to ___ law for a limited time.", "bank": ["monopoly", "patent", "copyright", "contract", "licence"], "answer": ["monopoly", "patent"], "explain": "Technical features belong to patents and aesthetic features to designs, both for a limited time; a trademark can last forever." },
+            { "id": "u4l2e3", "type": "mcq", "scenario": "Lego registered the shape of its brick as a 3D trademark.", "prompt": "What did the CJEU decide (2010)?", "choices": ["Invalid: the shape is necessary to obtain a technical result", "Valid: other shapes could achieve the same result", "Valid: the brick is famous", "Invalid: the brick is generic"], "answer": 0, "explain": "Lego Juris (C-48/09 P): the existence of alternative shapes does not save the mark; slavish copies can be fought with unfair competition." },
+            { "id": "u4l2e4", "type": "mcq", "scenario": "Louboutin registered a red colour applied to the sole of a high-heeled shoe.", "prompt": "Was the mark valid? (CJEU, 2018)", "choices": ["Yes: it protects a colour in a position, not exclusively a shape", "No: it is a shape giving substantial value", "No: colours cannot be marks", "Yes: shoes are not covered by the exclusions"], "answer": 0, "explain": "Louboutin (C-163/16): the main element is a colour designated by an international code, so it does not consist exclusively of a shape." },
+            { "id": "u4l2e5", "type": "tf", "prompt": "When assessing deceptive signs, the average consumer is considered particularly vulnerable to deception.", "answer": false, "explain": "The average consumer is reasonably attentive. Refusal requires actual deceit or a sufficiently serious risk of deception." },
+            { "id": "u4l2e6", "type": "mcq", "prompt": "Which sign is unlawful and cannot be registered?", "choices": ["A sign including a state flag without consent of the competent authority", "A fanciful word", "A slogan", "A sound file"], "answer": 0, "explain": "Unlawful signs: contrary to public policy or morality, or including flags, emblems, badges of public interest without consent." },
+            { "id": "u4l2e7", "type": "mcq", "scenario": "Sarah sells cosmetics and considers the words \"Beauty Cares\".", "prompt": "What is the main risk?", "choices": ["Refusal as descriptive / non-distinctive for cosmetics", "Refusal as contrary to morality", "Refusal as a shape", "No risk: it is the strongest option"], "answer": 0, "explain": "The words describe the purpose of the goods. An invented word would make a much stronger mark." },
+            { "id": "u4l2e8", "type": "mcq", "scenario": "Sarah also considers \"Milky care\" for creams that contain no milk.", "prompt": "Which absolute ground could apply?", "choices": ["Deceptive sign (nature of the goods)", "Lack of representation", "Shape necessary for a technical result", "Prior trademark right"], "answer": 0, "explain": "A sign that may mislead the public about the nature or quality of the goods is refused as deceptive." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u5",
+      "title": "An available sign",
+      "session": "Session 5",
+      "color": "#ff8a3d",
+      "lessons": [
+        {
+          "id": "u5l1",
+          "title": "The 3 cases of infringement",
+          "exercises": [
+            { "id": "u5l1e1", "type": "match", "prompt": "Prior mark \"Vuitton\" for bags. Match each new sign with its case.", "pairs": [["\"Vuitton\" for bags", "Identical sign + goods: affects a function"], ["\"Vouton\" for bags", "Similar: likelihood of confusion"], ["\"Vouitton\" for cars", "Reputed mark: unfair advantage"]] },
+            { "id": "u5l1e2", "type": "mcq", "prompt": "Which case is an exception to the principle of specialty?", "choices": ["The trademark with a reputation", "Identical sign for identical goods", "Similar sign creating a likelihood of confusion", "None of them"], "answer": 0, "explain": "A reputed mark is protected even for dissimilar goods, if the use takes unfair advantage of or harms its repute or distinctiveness." },
+            { "id": "u5l1e3", "type": "mcq", "prompt": "Canon (1998): likelihood of confusion is the risk that the public believes the goods…", "choices": ["come from the same or economically linked undertakings", "are of the same quality", "are sold in the same shop", "are the same price"], "answer": 0, "explain": "It includes the likelihood of association. A mere link with the prior mark is the test for reputed marks only." },
+            { "id": "u5l1e4", "type": "tf", "prompt": "Two signs are considered identical if they are the same or only show insignificant differences.", "answer": true, "explain": "Otherwise they are compared as similar signs." },
+            { "id": "u5l1e5", "type": "mcq", "prompt": "Sabel (1997): signs are compared on 3 levels. Which ones?", "choices": ["Visual, aural and conceptual", "Price, quality and origin", "Colour, shape and size", "Language, length and font"], "answer": 0, "explain": "Does it look alike, sound alike, make you think of the same thing?" },
+            { "id": "u5l1e6", "type": "mcq", "prompt": "Which factor is NOT part of the global assessment of likelihood of confusion?", "choices": ["The price paid for the registration", "Similarity of the signs", "Similarity of the goods and services", "Distinctiveness of the earlier mark"], "answer": 0, "explain": "Factors (Sabel, Canon): similarity of signs (with dominant elements), of goods/services, distinctiveness of the earlier mark, all through the relevant public." }
+          ]
+        },
+        {
+          "id": "u5l2",
+          "title": "Assessing confusion & reputation",
+          "exercises": [
+            { "id": "u5l2e1", "type": "mcq", "scenario": "\"Ball\" is registered for copy services. Someone applies for \"BALL print\" for the same services.", "prompt": "How are the signs compared?", "choices": ["Focus on the dominant element \"BALL\": the signs are similar", "\"print\" makes them completely different", "Only the full signs count, so no similarity", "Copy services are never protected"], "answer": 0, "explain": "More weight goes to the distinctive and dominant elements; \"print\" is descriptive for copy services." },
+            { "id": "u5l2e2", "type": "mcq", "prompt": "To compare goods and services, which criterion is NOT taken into account?", "choices": ["Whether they are in the same Nice class", "Their nature", "Their end users and method of use", "Whether they compete or are complementary"], "answer": 0, "explain": "The Nice class and the goods/services distinction are not decisive. Example: printer and printing services can be similar." },
+            { "id": "u5l2e3", "type": "tf", "prompt": "Lloyd (1999): the more distinctive the earlier mark, the higher the likelihood of confusion.", "answer": true, "explain": "Distinctiveness depends on descriptive elements, length and territory of use, promotional budget and public awareness." },
+            { "id": "u5l2e4", "type": "mcq", "prompt": "The relevant public is an average consumer who is…", "choices": ["reasonably well-informed, observant and circumspect, with an imperfect recollection of the mark", "an expert who compares both signs side by side", "particularly naive and inattentive", "always a professional buyer"], "answer": 0, "explain": "The level of attention varies with the goods; the consumer rarely sees both signs at once." },
+            { "id": "u5l2e5", "type": "mcq", "prompt": "Where must the reputation of an earlier mark exist?", "choices": ["In a substantial part of the country (or of the EU for an EU mark)", "In every EU member state", "Worldwide", "Only in the capital city"], "answer": 0, "explain": "Reputation is assessed quantitatively (knowledge by a significant part of the public) and territorially." },
+            { "id": "u5l2e6", "type": "mcq", "prompt": "Which prior right is unlikely to be infringed by registering a trademark?", "choices": ["A patent", "A prior trademark", "A protected geographical indication", "A prior company name"], "answer": 0, "explain": "A sign rarely conflicts with an invention. Designs, copyrights, GIs and other distinctive signs can be prior rights." },
+            { "id": "u5l2e7", "type": "fill", "prompt": "The prior TM database used in class is TM___. Relative grounds protect the rights of ___ parties.", "bank": ["view", "third", "first", "search", "public"], "answer": ["view", "third"], "explain": "TMview lists prior trademarks. Relative grounds = infringement of third parties' prior rights." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u6",
+      "title": "Registration & life of the trademark",
+      "session": "Session 6",
+      "color": "#ffbf1f",
+      "lessons": [
+        {
+          "id": "u6l1",
+          "title": "Acquiring a trademark",
+          "exercises": [
+            { "id": "u6l1e1", "type": "tf", "prompt": "In the EU, a trademark must be registered to give its owner an exclusive right.", "answer": true, "explain": "Art. 10 TMD: registration confers exclusive rights on the proprietor." },
+            { "id": "u6l1e2", "type": "mcq", "prompt": "A well-known mark (Art. 6bis Paris Convention) is protected without registration, but its owner can only sue for…", "choices": ["tortious liability", "trademark infringement", "criminal counterfeiting", "breach of contract"], "answer": 0, "explain": "The same applies to \"unregistered trademarks\" (™) in common law countries." },
+            { "id": "u6l1e3", "type": "mcq", "prompt": "An EU trademark registered at the EUIPO is protected in…", "choices": ["the 27 member states", "Europe including Switzerland and the UK", "France only", "131 countries"], "answer": 0, "explain": "Principle of territoriality: national marks protect one territory; the EU mark is the exception covering the 27 states." },
+            { "id": "u6l1e4", "type": "mcq", "prompt": "Online fee for a French mark in 3 classes?", "choices": ["€270", "€190", "€310", "€570"], "answer": 0, "explain": "€190 for one class + €40 per extra class: 190 + 40 + 40 = €270." },
+            { "id": "u6l1e5", "type": "mcq", "prompt": "Online fee for an EU mark in 3 classes?", "choices": ["€1,050", "€850", "€1,000", "€1,200"], "answer": 0, "explain": "€850 for one class + €50 for the 2nd + €150 per additional class: 850 + 50 + 150 = €1,050." },
+            { "id": "u6l1e6", "type": "mcq", "prompt": "The priority right (Art. 4 Paris Convention) gives the owner how long to file in other member countries with the same date?", "choices": ["6 months", "3 months", "12 months", "5 years"], "answer": 0, "explain": "179 countries are party to the Paris Convention, administered by WIPO." },
+            { "id": "u6l1e7", "type": "mcq", "prompt": "Which is an advantage of the Madrid System?", "choices": ["One form for several countries, in English, French or Spanish", "One single worldwide trademark title", "No fees", "No examination by national offices"], "answer": 0, "explain": "The applications go to each national office; the resulting marks form an \"international trademark\" (131 countries)." }
+          ]
+        },
+        {
+          "id": "u6l2",
+          "title": "Examination, opposition & losing a TM",
+          "exercises": [
+            { "id": "u6l2e1", "type": "match", "prompt": "Match each procedure with what it checks.", "pairs": [["Examination by the office", "Absolute grounds (intrinsic validity)"], ["Opposition", "Relative grounds (prior rights)"], ["Revocation", "Non-use or loss of distinctiveness"], ["Cancellation", "Validity missing at registration"]] },
+            { "id": "u6l2e2", "type": "mcq", "prompt": "Opposition period after publication of the application?", "choices": ["3 months (EU) and 2 months (France)", "6 months everywhere", "1 month (EU) and 3 months (France)", "No time limit"], "answer": 0, "explain": "Owners of other prior rights must wait for the registration and then ask for cancellation." },
+            { "id": "u6l2e3", "type": "mcq", "prompt": "How long does a trademark registration last?", "choices": ["10 years, renewable indefinitely", "20 years, not renewable", "5 years, renewable 4 times", "For life"], "answer": 0, "explain": "There is no limit to the number of renewals." },
+            { "id": "u6l2e4", "type": "mcq", "prompt": "A trademark can be revoked if it has not been genuinely used for…", "choices": ["5 years (3 years in the US)", "1 year", "10 years", "It can never be revoked"], "answer": 0, "explain": "Revocation also applies if the mark loses its distinctiveness after registration. It can be total or partial." },
+            { "id": "u6l2e5", "type": "tf", "prompt": "The owner of a prior right who knowingly tolerated a later mark for 5 years can still ask for its cancellation.", "answer": false, "explain": "There is no general time limit for cancellation, but acquiescence for 5 successive years blocks it." },
+            { "id": "u6l2e6", "type": "mcq", "scenario": "CHAMPOLLION needs TM1 in Germany, Poland, Austria, Hungary and Czech Republic.", "prompt": "Best route?", "choices": ["An EU trademark at the EUIPO", "Five national applications", "The Madrid System only", "No registration: rely on use"], "answer": 0, "explain": "All five countries are EU member states, so one EU mark covers them." },
+            { "id": "u6l2e7", "type": "mcq", "scenario": "CHAMPOLLION needs TM2 in France, Belgium, Switzerland and Canada.", "prompt": "Best route?", "choices": ["A French (or EU) base mark extended through the Madrid System", "An EU trademark only", "One national filing in Switzerland", "The priority right alone"], "answer": 0, "explain": "Switzerland and Canada are outside the EU: the Madrid System extends a base mark to them with one form." },
+            { "id": "u6l2e8", "type": "mcq", "prompt": "For an EU trademark, who decides on cancellation or revocation at first instance?", "choices": ["The EUIPO", "Any national judge", "The CJEU", "WIPO"], "answer": 0, "explain": "For national marks, the office or the judge can decide." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u7",
+      "title": "Using & defending a trademark",
+      "session": "Session 8",
+      "color": "#00b8a9",
+      "lessons": [
+        {
+          "id": "u7l1",
+          "title": "Licence & assignment",
+          "exercises": [
+            { "id": "u7l1e1", "type": "mcq", "prompt": "A trademark licence is a contract by which the owner…", "choices": ["allows a third party to exploit the mark within set limits, usually for royalties", "permanently transfers ownership of the mark", "abandons the mark", "registers the mark abroad"], "answer": 0, "explain": "Licensor → licensee. A permanent transfer is an assignment. Both contracts appear on the register." },
+            { "id": "u7l1e2", "type": "match", "prompt": "Match each type of licence.", "pairs": [["Non-exclusive", "Several licensees, owner keeps using"], ["Exclusive", "One licensee, owner stops using"], ["Sole", "One licensee, owner keeps using"], ["Sub-licence", "Licensee may grant licences"]] },
+            { "id": "u7l1e3", "type": "mcq", "prompt": "Franchising (e.g. McDonald's) is…", "choices": ["a licence of IP rights and know-how with continuous support to replicate a business concept", "an assignment of the trademark", "a collective mark", "a cross-licence between competitors"], "answer": 0, "explain": "The franchisor provides training and support; the franchisee replicates the concept." },
+            { "id": "u7l1e4", "type": "mcq", "prompt": "Which clause must an assignment agreement include, as in any sale?", "choices": ["A warranty that the assignor is the only owner and the mark is free of burdens", "A non-compete clause", "A royalty percentage", "A sub-licence clause"], "answer": 0, "explain": "The price of an assignment is usually a lump sum; licences usually use royalties." },
+            { "id": "u7l1e5", "type": "tf", "prompt": "A trademark should be used as registered, both to avoid revocation and to sue for infringement.", "answer": true, "explain": "Minor changes are allowed if they do not alter distinctive character. A word mark gets wider protection (usable in figurative form)." },
+            { "id": "u7l1e6", "type": "mcq", "prompt": "In an international licence, how do you avoid uncertainty about the applicable law?", "choices": ["Include a governing law clause", "Register the contract with WIPO", "Use only French law automatically", "Avoid writing the contract"], "answer": 0, "explain": "Validity conditions vary with the applicable law, hence the governing law clause." }
+          ]
+        },
+        {
+          "id": "u7l2",
+          "title": "The infringement lawsuit",
+          "exercises": [
+            { "id": "u7l2e1", "type": "mcq", "scenario": "A garage displays \"We fix BMW cars\" without BMW's authorisation.", "prompt": "Can BMW prohibit it?", "choices": ["No: honest use to refer to the purpose of the services", "Yes: any use of a mark is infringement", "Yes, if the garage is profitable", "Only in France"], "answer": 0, "explain": "Exceptions: descriptive use, use to indicate the purpose of goods/services, a person's name or address, a local prior sign." },
+            { "id": "u7l2e2", "type": "mcq", "prompt": "Exhaustion of rights: the owner cannot oppose the resale of a product…", "choices": ["put on the EEA market under the mark by him or with his consent", "bought anywhere in the world", "sold by a competitor without consent", "that has been altered after sale"], "answer": 0, "explain": "Legitimate reasons, like altering the goods, allow the owner to oppose (guarantee of quality)." },
+            { "id": "u7l2e3", "type": "mcq", "prompt": "After a \"saisie-contrefaçon\" in France, the claimant must start the infringement lawsuit within…", "choices": ["15 days", "2 months", "1 year", "No deadline"], "answer": 0, "explain": "Art. 7 Directive 2004/48 / L. 716-4-7 IPC: measures to preserve evidence, ordered on reasonable prima facie evidence." },
+            { "id": "u7l2e4", "type": "mcq", "prompt": "In France, civil trademark cases are heard by…", "choices": ["10 specialised tribunaux judiciaires (incl. Paris, Lille, Nanterre)", "any commercial court", "the Conseil d'État", "the INPI"], "answer": 0, "explain": "Criminal cases go to the tribunal correctionnel (misdemeanour)." },
+            { "id": "u7l2e5", "type": "mcq", "prompt": "Maximum criminal penalty for counterfeiting in France (not in an organised group)?", "choices": ["€400,000 fine and 4 years in prison", "€750,000 and 7 years", "€40,000 and 1 year", "Only damages"], "answer": 0, "explain": "In an organised criminal group: up to €750,000 and 7 years." },
+            { "id": "u7l2e6", "type": "tf", "prompt": "French courts can award punitive damages in trademark cases.", "answer": false, "explain": "Damages compensate the loss (lost earnings, unfair profits, moral prejudice); there are no punitive damages in France." },
+            { "id": "u7l2e7", "type": "mcq", "prompt": "To win an action in tort (passing off / unfair competition), the right holder must prove…", "choices": ["an act, a damage and a causal link", "registration of the sign", "intent to harm only", "a reputation in the EU"], "answer": 0, "explain": "This action protects other distinctive signs and can be cumulated with infringement if a distinct prejudice is proven." },
+            { "id": "u7l2e8", "type": "mcq", "prompt": "Which law applies to a trademark infringement?", "choices": ["The law of the country where the IP right is protected", "The law of the defendant's nationality", "Always French law", "The law chosen by the claimant"], "answer": 0, "explain": "Courts with jurisdiction: place of the infringing act or harm, or the defendant's residence." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u8",
+      "title": "Legal vocabulary EN ↔ FR",
+      "session": "Glossary",
+      "color": "#8a6bff",
+      "lessons": [
+        {
+          "id": "u8l1",
+          "title": "Glossary 1",
+          "exercises": [
+            { "id": "u8l1e1", "type": "match", "prompt": "Match the English term with its French translation.", "pairs": [["Absolute ground of refusal", "Motif absolu de rejet"], ["Assignment of rights", "Cession de droit"], ["Cancellation", "Nullité de la marque"], ["Revocation", "Déchéance de la marque"]] },
+            { "id": "u8l1e2", "type": "match", "prompt": "Match the English term with its French translation.", "pairs": [["Likelihood of confusion", "Risque de confusion"], ["Unfair competition", "Concurrence déloyale"], ["Tortious liability", "Responsabilité délictuelle"], ["Well-known trademark", "Marque notoire"]] },
+            { "id": "u8l1e3", "type": "mcq", "prompt": "\"Reputed trademark\" in French is…", "choices": ["Marque de renommée", "Marque notoire", "Marque collective", "Marque de garantie"], "answer": 0, "explain": "Well-known trademark = marque notoire; reputed trademark = marque de renommée." },
+            { "id": "u8l1e4", "type": "mcq", "prompt": "\"Saisie-contrefaçon\" in English is…", "choices": ["Physical seizure of the infringing goods", "Customs seizure", "Revocation", "Injunction"], "answer": 0, "explain": "A judicial seizure in general is simply \"seizure\" (saisie judiciaire)." },
+            { "id": "u8l1e5", "type": "mcq", "prompt": "\"Undertaking\" in French means…", "choices": ["Entreprise (unité économique)", "Engagement contractuel", "Société de services", "Entrepreneur individuel"], "answer": 0, "explain": "The trademark distinguishes the goods or services of one undertaking from those of others." }
+          ]
+        },
+        {
+          "id": "u8l2",
+          "title": "Glossary 2",
+          "exercises": [
+            { "id": "u8l2e1", "type": "match", "prompt": "Match the English term with its French translation.", "pairs": [["Suggestive sign", "Signe évocateur"], ["Fanciful sign", "Signe fantaisiste"], ["Deceptive sign", "Signe trompeur"], ["Unlawful sign", "Signe illicite"]] },
+            { "id": "u8l2e2", "type": "match", "prompt": "Match the English term with its French translation.", "pairs": [["Shape trademark", "Marque tridimensionnelle"], ["Word trademark", "Marque verbale"], ["Motion trademark", "Marque de mouvement"], ["Pattern trademark", "Marque de motif"]] },
+            { "id": "u8l2e3", "type": "mcq", "prompt": "\"Infringement of an IP right\" in French is…", "choices": ["Acte de contrefaçon", "Atteinte à l'ordre public", "Concurrence déloyale", "Rupture de contrat"], "answer": 0, "explain": "\"Infringement of rights\" in general = atteinte aux droits." },
+            { "id": "u8l2e4", "type": "mcq", "prompt": "\"Warranty of quiet possession clause\" in French is…", "choices": ["Clause de garantie de non éviction", "Clause de droit applicable", "Clause de confidentialité", "Clause d'exclusivité"], "answer": 0, "explain": "\"Governing law clause\" = clause de droit applicable." },
+            { "id": "u8l2e5", "type": "mcq", "prompt": "\"Misdemeanour\" in French is…", "choices": ["Délit", "Crime", "Contravention", "Faute"], "answer": 0, "explain": "In France, IP infringement is a misdemeanour (délit), judged by the tribunal correctionnel." }
+          ]
+        }
+      ]
+    }
+  ]
+}

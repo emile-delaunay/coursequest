@@ -1,0 +1,11 @@
+{
+  "semester": "S3",
+  "courses": [
+    { "id": "trademark-law", "title": "Trademark Law", "code": "2311", "status": "live", "color": "#7b5cff", "icon": "scale", "tagline": "IP rights, validity, registration, infringement" },
+    { "id": "digital-innovation", "title": "Digital Innovation", "code": "3810", "status": "soon", "color": "#1aa3ff", "icon": "chip", "tagline": "ERP, business models, Industry 4.0" },
+    { "id": "econometrics", "title": "Econometrics & Data Analysis", "code": "2310", "status": "soon", "color": "#ff8a3d", "icon": "chart", "tagline": "Regression, tests, data" },
+    { "id": "cost-accounting", "title": "Cost Accounting", "code": "2313", "status": "soon", "color": "#18b47b", "icon": "coins", "tagline": "CVP, break-even, costing" },
+    { "id": "advanced-financial-accounting", "title": "Advanced Financial Accounting", "code": "3874", "status": "soon", "color": "#ff5c8a", "icon": "book", "tagline": "Accounting cycle, investing, financing" },
+    { "id": "marketing-management", "title": "Marketing Management", "code": "2331", "status": "soon", "color": "#ffbf1f", "icon": "megaphone", "tagline": "Segmentation, positioning, mix" }
+  ]
+}
