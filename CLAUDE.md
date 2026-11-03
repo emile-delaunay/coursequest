@@ -111,3 +111,4 @@ Cours prévus : `digital-innovation`, `econometrics`, `cost-accounting`, `advanc
 - Garder l'UI en français, l'accessibilité (focus visibles, `prefers-reduced-motion`) et le mobile sans scroll horizontal à 420 px.
 - Ne pas changer la clé `localStorage` sans migration, sinon les utilisateurs perdent leur progression.
 - Tester avant de pousser : serveur local, puis une leçon complète (bonne et mauvaise réponse), puis le profil, avec la console sans erreurs.
+- Après une modification de `style.css` ou `app.js`, incrémenter `?v=N` dans `index.html` : Pages met ces fichiers en cache 10 min.
